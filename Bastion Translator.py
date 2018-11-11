@@ -8,7 +8,9 @@ TOKEN = os.environ["TOKEN"]
 
 gimich = os.environ["Gimich"]
 
-bastion = os.environ["Bastion"]
+discord.emoji(bastion).name() = "Bastion"
+
+discord.emoji(bastion).id() = os.environ["Bastion"]
 
 @client.event
 async def on_message(message):
@@ -18,23 +20,23 @@ async def on_message(message):
 		return
 
 	if "dweeee" in messageRecue and message.author.id == gimich:
-		msg = str(bastion) + ' a dit : \"Bonjour\"'.format(message)
+		msg = discord.emoji(Bastion) + ' a dit : \"Bonjour\"'.format(message)
 		await client.send_message(message.channel, msg)
 
 	if "dwuuuuuuu" in messageRecue and message.author.id == gimich:
-		msg = (str(bastion) + ' est triste'.format(message))
+		msg = discord.emoji(Bastion) + ' est triste'.format(message))
 		await client.send_message(message.channel, msg)
 
 	if "dwuiii" in messageRecue and message.author.id == gimich:
-		msg = str(bastion) + ' a dit : \"Merci\"'.format(message)
+		msg = discord.emoji(Bastion) + ' a dit : \"Merci\"'.format(message)
 		await client.send_message(message.channel, msg)
 
 	if "dwui" in messageRecue and message.author.id == gimich:
-		msg = str(bastion) + ' a dit : \"Oui\"'.format(message)
+		msg = discord.emoji(Bastion) + ' a dit : \"Oui\"'.format(message)
 		await client.send_message(message.channel, msg)
 
 	if "dwuiiiiiii" in messageRecue and message.author.id == gimich:
-		msg = str(bastion) + ' est content'.format(message)
+		msg = discord.emoji(Bastion) + ' est content'.format(message)
 		await client.send_message(message.channel, msg)
 
 @client.event
