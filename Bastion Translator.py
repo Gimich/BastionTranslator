@@ -8,7 +8,7 @@ TOKEN = os.environ["TOKEN"]
 
 gimich = os.environ["Gimich"]
 
-bastionEmoji = str("<:Bastion:" + os.environ["Bastion"] + ">")
+bastionEmoji = "<:Bastion:" + os.environ["Bastion"] + ">"
 
 @client.event
 async def on_message(message):
@@ -42,6 +42,7 @@ async def on_ready():
 	print('Logged in as')
 	print(client.user.name)
 	print(client.user.id)
+	print(bastionEmoji)
 	print('------')
 
 client.run(TOKEN)
