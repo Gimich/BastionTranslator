@@ -16,23 +16,23 @@ async def on_message(message):
 		return
 
 	if "dweeee" in messageRecue and message.author.id == gimich:
-		msg = 'Bastion a dit : \"Bonjour\"'.format(message)
+		msg = ':Bastion: a dit : \"Bonjour\"'.format(message)
 		await client.send_message(message.channel, msg)
 
 	if "dwuuuuuuu" in messageRecue and message.author.id == gimich:
-		msg = 'Bastion est triste'.format(message)
+		msg = ':Bastion: est triste'.format(message)
 		await client.send_message(message.channel, msg)
 
 	if "dwuiii" in messageRecue and message.author.id == gimich:
-		msg = 'Bastion a dit : \"Merci\"'.format(message)
+		msg = ':Bastion: a dit : \"Merci\"'.format(message)
 		await client.send_message(message.channel, msg)
 
 	if "dwui" in messageRecue and message.author.id == gimich:
-		msg = 'Bastion a dit : \"Oui\"'.format(message)
+		msg = ':Bastion: a dit : \"Oui\"'.format(message)
 		await client.send_message(message.channel, msg)
 
 	if "dwuiiiiiii" in messageRecue and message.author.id == gimich:
-		msg = 'Bastion a dit : \"Merci\"'.format(message)
+		msg = ':Bastion: est content'.format(message)
 		await client.send_message(message.channel, msg)
 
 @client.event
