@@ -8,7 +8,7 @@ TOKEN = os.environ["TOKEN"]
 
 gimich = os.environ["Gimich"]
 
-bastionEmoji = "<:Bastion:511165307339931678>"
+bastionEmoji = "<:Bastion:511165693216161812>"
 
 @client.event
 async def on_message(message):
