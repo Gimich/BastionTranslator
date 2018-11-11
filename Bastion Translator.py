@@ -8,7 +8,7 @@ TOKEN = os.environ["TOKEN"]
 
 gimich = os.environ["Gimich"]
 
-discord.emoji("Bastion" + os.environ["Bastion"])
+bastion = discord.emoji("Bastion" + os.environ["Bastion"])
 
 @client.event
 async def on_message(message):
