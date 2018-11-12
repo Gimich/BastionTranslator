@@ -22,7 +22,7 @@ async def on_message(message):
 		await client.send_message(message.channel, msg)
 
 	if "dwuuuuuuu" in messageRecue:
-		msg = (message.author.nick + " : " + 'est triste'.format(message))
+		msg = (message.author.nick + 'est triste'.format(message))
 		await client.send_message(message.channel, msg)
 
 	if "dwuiii" in messageRecue:
@@ -34,7 +34,7 @@ async def on_message(message):
 		await client.send_message(message.channel, msg)
 
 	if "dwuiiiiiii" in messageRecue:
-		msg = (message.author.nick + " : " + 'est content'.format(message))
+		msg = (message.author.nick + 'est content'.format(message))
 		await client.send_message(message.channel, msg)
 
 @client.event
