@@ -12,7 +12,7 @@ bastionEmoji = "<:Bastion:" + os.environ["Bastion"] + ">"
 
 @client.event
 async def on_message(message):
-	auteur = message.author
+	auteur = message.author.user()
 	
 	messageRecue = message.content.lower().split(" ")
 	if message.author == client.user:
