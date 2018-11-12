@@ -12,29 +12,32 @@ bastionEmoji = "<:Bastion:" + os.environ["Bastion"] + ">"
 
 @client.event
 async def on_message(message):
-	
+	if isinstance(message.author.nick, str):
+		auteur = message.author.nick
+	else:
+		auteur = message.author.user.nickname
+		
 	messageRecue = message.content.lower().split(" ")
 	if message.author == client.user:
 		return
 
-	if "dweeee" in messageRecue:
-		msg = (message.author.nick + 'a dit : \"Bonjour\"'.format(message))
+	if "dweeee" in messageRecue
+		msg = (auteur + 'a dit : \"Bonjour\"'.format(message))
 		await client.send_message(message.channel, msg)
 
 	if "dwuuuuuuu" in messageRecue:
-		msg = (message.author.nick + 'est triste'.format(message))
+		msg = (auteur + 'est triste'.format(message))
 		await client.send_message(message.channel, msg)
 
 	if "dwuiii" in messageRecue:
-		msg = (message.author.nick + 'a dit : \"Merci\"'.format(message))
+		msg = (auteur + 'a dit : \"Merci\"'.format(message))
 		await client.send_message(message.channel, msg)
 
 	if "dwui" in messageRecue:
-		msg = (message.author.nick + 'a dit : \"Oui\"'.format(message))
+		msg = (auteur + 'a dit : \"Oui\"'.format(message))
 		await client.send_message(message.channel, msg)
 
 	if "dwuiiiiiii" in messageRecue:
-		msg = (message.author.nick + 'est content'.format(message))
 		await client.send_message(message.channel, msg)
 
 @client.event
