@@ -15,7 +15,7 @@ async def on_message(message):
 	if isinstance(message.author.nick, str):
 		auteur = message.author.nick
 	else:
-		auteur = message.author.user.nickname
+		auteur = message.author.user.username
 		
 	messageRecue = message.content.lower().split(" ")
 	if message.author == client.user:
