@@ -22,22 +22,23 @@ async def on_message(message):
 		return
 
 	if "dweeee" in messageRecue:
-		msg = (auteur + 'a dit : \"Bonjour\"'.format(message))
+		msg = (auteur + ' a dit : \"Bonjour\"'.format(message))
 		await client.send_message(message.channel, msg)
 
 	if "dwuuuuuuu" in messageRecue:
-		msg = (auteur + 'est triste'.format(message))
+		msg = (auteur + ' est triste'.format(message))
 		await client.send_message(message.channel, msg)
 
 	if "dwuiii" in messageRecue:
-		msg = (auteur + 'a dit : \"Merci\"'.format(message))
+		msg = (auteur + ' a dit : \"Merci\"'.format(message))
 		await client.send_message(message.channel, msg)
 
 	if "dwui" in messageRecue:
-		msg = (auteur + 'a dit : \"Oui\"'.format(message))
+		msg = (auteur + ' a dit : \"Oui\"'.format(message))
 		await client.send_message(message.channel, msg)
 
 	if "dwuiiiiiii" in messageRecue:
+		msg = (auteur + ' est content'.format(message))
 		await client.send_message(message.channel, msg)
 
 @client.event
