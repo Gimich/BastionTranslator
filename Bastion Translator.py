@@ -21,7 +21,7 @@ async def on_message(message):
 	if message.author == client.user:
 		return
 
-	if "dweeee" in messageRecue
+	if "dweeee" in messageRecue:
 		msg = (auteur + 'a dit : \"Bonjour\"'.format(message))
 		await client.send_message(message.channel, msg)
 
