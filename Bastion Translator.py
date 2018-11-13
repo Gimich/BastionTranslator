@@ -27,8 +27,8 @@ async def on_message(message):
 		await client.send_message(message.channel, msg)
 
 	for i in len(messagerecue):
-		dwuiii = messagerecue[i].split('i')
-		dwuuu = messagerecue[i].split('u')
+		dwuiii = messageRecue[i].split('i')
+		dwuuu = messageRecue[i].split('u')
 		if len(dwuiii)>7:
 			msg = (auteur + ' est content'.format(message))
 			await client.send_message(message.channel, msg)
