@@ -18,6 +18,7 @@ async def on_message(message):
 		auteur = message.author.name
 		
 	messageRecue = message.content.lower().split(" ")
+	
 	if message.author == client.user:
 		return
 
@@ -25,20 +26,22 @@ async def on_message(message):
 		msg = (auteur + ' a dit : \"Bonjour\"'.format(message))
 		await client.send_message(message.channel, msg)
 
-	if "dwuuuuuuu" in messageRecue:
-		msg = (auteur + ' est triste'.format(message))
-		await client.send_message(message.channel, msg)
-
+	for i in len(messagerecue):
+		dwuiii = messagerecue[i].split('i')
+		dwuuu = messagerecue[i].split('u')
+		if len(dwuiii)>7:
+			msg = (auteur + ' est content'.format(message))
+			await client.send_message(message.channel, msg)
+		if len(dwuuu)>7:
+			msg = (auteur + ' est triste'.format(message))
+			await client.send_message(message.channel, msg)
+	
 	if "dwuiii" in messageRecue:
 		msg = (auteur + ' a dit : \"Merci\"'.format(message))
 		await client.send_message(message.channel, msg)
 
 	if "dwui" in messageRecue:
 		msg = (auteur + ' a dit : \"Oui\"'.format(message))
-		await client.send_message(message.channel, msg)
-
-	if "dwuiiiiiii" in messageRecue:
-		msg = (auteur + ' est content'.format(message))
 		await client.send_message(message.channel, msg)
 
 @client.event
