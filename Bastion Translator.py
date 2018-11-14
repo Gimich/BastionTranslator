@@ -1,6 +1,7 @@
 # Work with Python 3.6
 import discord
 import os
+import time
 
 client = discord.Client()
 
@@ -23,6 +24,7 @@ async def on_message(message):
 		return
 
 	if "dweeee" in messageRecue:
+		print(message.timestamp)
 		msg = (auteur + ' dit : \"Bonjour\"'.format(message))
 		await client.send_message(message.channel, msg)
 
