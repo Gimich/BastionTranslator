@@ -24,7 +24,7 @@ async def on_message(message):
 		return
 
 	if "dweeee" in messageRecue:
-		if message.timestamp[3] < 18 and message.timestamp[3] > 6:
+		if message.timestamp.struct_time[3] < 18 and message.timestamp.struct_time[3] > 6:
 			msg = (auteur + ' dit : \"Bonjour\"'.format(message))
 		else : msg = (auteur + ' dit : \"Bonsoir\"'.format(message))
 		await client.send_message(message.channel, msg)
