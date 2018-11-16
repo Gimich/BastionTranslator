@@ -24,7 +24,7 @@ async def on_message(message):
 		return
 
 	if "dweeee" in messageRecue:
-		print((message.tmestamp.time().hour +2) %24)
+		print((message.timestamp.time().hour +2) %24)
 		if (message.timestamp.time().hour + 2) % 24 < 18 and (message.timestamp.time().hour + 2) %24 > 6:
 			msg = (auteur + ' dit : \"Bonjour\"'.format(message))
 		else : msg = (auteur + ' dit : \"Bonsoir\"'.format(message))
