@@ -21,7 +21,6 @@ async def on_message(message):
 		
 	messageRecue = re.sub('\.', ' ', message.content)
 	messageRecue = messageRecue.lower().split(' ')
-	print(messageRecue)
 			   
 	if message.author == client.user:
 		return
