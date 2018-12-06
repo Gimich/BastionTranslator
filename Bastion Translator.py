@@ -2,6 +2,7 @@
 import discord
 import os
 import time
+import re
 
 client = discord.Client()
 
@@ -18,8 +19,8 @@ async def on_message(message):
 	else:
 		auteur = message.author.name
 		
-	messageRecue = message.content.lower().split(" ")
-	
+	messageRecue = re.sub('.', '', message.content.lower().split(' ')
+			   
 	if message.author == client.user:
 		return
 
