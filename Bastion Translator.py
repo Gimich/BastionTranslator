@@ -48,6 +48,10 @@ async def on_message(message):
 	if "dwui" in messageRecue:
 		msg = (auteur + ' dit : \"Oui\"'.format(message))
 		await client.send_message(message.channel, msg)
+		
+	if "dwueee" in messageRecue:
+		msg = (auteur + ' dit : \"Bien\"'.format(message))
+		await client.send_message(message.channel, msg)
 
 @client.event
 async def on_ready():
