@@ -19,7 +19,7 @@ async def on_message(message):
 	else:
 		auteur = message.author.name
 		
-	messageRecue = re.sub([.?,;:/!], ' ', message.content)
+	messageRecue = re.sub([.,;:/!], ' ', message.content)
 	messageRecue = messageRecue.lower().split(' ')
 			   
 	if message.author == client.user:
