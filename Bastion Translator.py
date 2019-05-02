@@ -44,6 +44,10 @@ async def on_message(message):
 	if "dwuiii" in messageRecue:
 		msg = (auteur + ' dit : \"Merci\"'.format(message))
 		await client.send_message(message.channel, msg)
+		
+	if "dwiiii" in messageRecue:
+		msg = (auteur + ' dit : \"Bonne nuit\"'.format(message))
+		await client.send_message(message.channel, msg)
 
 	if "dwui" in messageRecue:
 		msg = (auteur + ' dit : \"Oui\"'.format(message))
